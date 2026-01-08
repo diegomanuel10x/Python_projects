@@ -41,7 +41,8 @@ def run_program():
             break
 
         else:
-            print("Invalid choice, try again.")
+            print("Invalid choice, try again!")
 
 
 run_program()
+

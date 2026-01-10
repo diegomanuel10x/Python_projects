@@ -1,4 +1,4 @@
-def print_board(b):
+def board(b):
     for row in b:
         print(" | ".join(row))
         print("-" * 9)
@@ -15,7 +15,7 @@ def play():
     board = [[" " for _ in range(3)] for _ in range(3)]
     turn = "X"
     for _ in range(9):
-        print_board(board)
+        board(board)
         try:
             row, col = map(int, input(f"Player {turn} (row col 0-2): ").split())
             if board[row][col] != " ":
@@ -23,15 +23,16 @@ def play():
                 continue
             board[row][col] = turn
             if check_win(board, turn):
-                print_board(board)
+                board(board)
                 print(f"Player {turn} wins!")
                 return
             turn = "O" if turn == "X" else "X"
         except:
-            print("Invalid input.")
-    print_board(board)
-    print("Draw!")
+            print("Invalid input!")
+    board(board)
+    print("Its a Draw!")
 
 play()
+
 
 # TYPE THE NUMBER OF THE ROW AND COLUMN

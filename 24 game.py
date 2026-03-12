@@ -1,7 +1,7 @@
 import random
 
 print("24 Game")
-rounds = 3
+rounds = 4
 
 for n in range(0, rounds):
     cards = [random.randint(1, 9) for i in range(4)]

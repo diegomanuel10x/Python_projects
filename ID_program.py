@@ -17,9 +17,9 @@ def run_program():
     ids = []
 
     while True:
-        print("1. Create a neew ID")
-        print("2. View All IDs")
-        print("3. Exit")
+        print("1.Create a neew ID")
+        print("2.View All IDs")
+        print("3.Exit")
 
         choice = input("Select an option (1-3): ")
 

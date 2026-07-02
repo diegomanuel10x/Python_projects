@@ -1,1 +1,1 @@
-print(int(eval(input("enter"))))
+print(int(eval(input("enter")))).  
